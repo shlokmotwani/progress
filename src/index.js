@@ -4,6 +4,7 @@ import { grid } from "./grid";
 
 const GRID_SIZE = 10;
 const SUCCESS_COLOR = "rgba(11, 117, 37, 0.9)";
+let startDate = new Date("2024-07-23");
 
 let wrapper = document.createElement("div");
 let titleDiv = document.createElement("div");
@@ -13,7 +14,6 @@ let currentGrid = grid(GRID_SIZE);
 let totalDaysCount;
 
 function daysCompleted() {
-  let startDate = new Date("2024-07-01");
   let currentDate = new Date();
   return differenceInDays(currentDate, startDate);
 }
